@@ -62,7 +62,7 @@ namespace CybersecurityChatBot_PART2
             Console.ForegroundColor = ConsoleColor.DarkGreen;
             string userName = Console.ReadLine();
 
-            LoadingEffect();
+           
             Console.ForegroundColor = ConsoleColor.White;
             RespondWithSpeech($"Hi {userName} , I'm here to help you stay safe online!\n");
 
@@ -84,7 +84,7 @@ namespace CybersecurityChatBot_PART2
                 //Checks for an empty input
                 if (string.IsNullOrWhiteSpace(userInput))
                 {
-                    LoadingEffect();
+                    
                     Console.ForegroundColor = ConsoleColor.Red;
                     RespondWithSpeech("Please enter a valid input.");
                     continue;
@@ -92,7 +92,7 @@ namespace CybersecurityChatBot_PART2
                 //Checks for exit command
                 if (userInput == "exit" || userInput == "quit")
                 {
-                    LoadingEffect();
+                   
                     Console.ForegroundColor = ConsoleColor.Red;
                     RespondWithSpeech(" Stay safe and think before you click online. Goodbye!");
                     break;
@@ -155,8 +155,11 @@ namespace CybersecurityChatBot_PART2
 
             };
 
-            Dictionary<string, List<string>> keywordGroups = new Dictionary<string, List<string>>
-{
+            
+
+
+    Dictionary<string, List<string>> keywordGroups = new Dictionary<string, List<string>>
+    {
     { "cybersecurity", new List<string> { "cyber security", "online safety", "information security", "cyber attack", "cyber threats" } },
     { "phishing", new List<string> { "phishing emails", "phishing", "fake emails", "email scam", "spear phishing", "phishing attack" } },
     { "malware", new List<string> { "malicious software", "virus", "trojan", "worm", "spyware", "adware", "malware infection" } },
@@ -166,6 +169,22 @@ namespace CybersecurityChatBot_PART2
     { "password", new List<string> { "strong password", "password security", "password manager", "password protection" } },
     { "social engineering", new List<string> { "social engineering attack", "manipulation", "pretexting", "baiting", "impersonation" } }
     };
+
+
+            Dictionary<string, string> followUpQuestions = new Dictionary<string, string>
+            {
+                { "Tell me more about cybersecurity", "Would you like to know more about specific cybersecurity threats or best practices?" },
+                { "Tell me more about phishing", "Are you interested in learning how to recognize phishing attempts?" },
+                { "Tell me more about malware", "Would you like tips on how to protect your device from malware?" },
+                { "Tell me more about ransomware", "Do you want to know how to recover from a ransomware attack?" },
+                { "Tell me more about firewall", "Would you like to learn how to configure a firewall for better security?" },
+                { "Tell me more about antivirus", "Are you looking for recommendations on antivirus software?" },
+                { "Tell me more about password", "Would you like tips on creating strong passwords?" },
+                { "Tell me more about social engineering", "Do you want to learn how to avoid falling victim to social engineering attacks?" }
+            };
+             
+
+
             bool foundResponse = false;
 
             chatHistory.Add($"{userName}: {input}");
@@ -234,10 +253,12 @@ namespace CybersecurityChatBot_PART2
             Console.Write("Chatbot");
             for (int i = 0; i < 3; i++)
             {
+               
                 Thread.Sleep(400);
                 Console.Write(".");
 
             }
+            
             Console.WriteLine();
         }
 
