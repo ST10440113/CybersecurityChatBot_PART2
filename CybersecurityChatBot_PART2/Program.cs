@@ -133,55 +133,122 @@ namespace CybersecurityChatBot_PART2
         {
             Dictionary<string, string> responses = new Dictionary<string, string>
             {
-                { "cybersecurity", "Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks." },
-                { "phishing", "Phishing is a type of cyber attack where attackers impersonate legitimate organizations to steal sensitive information." },
-                { "malware", "Malware is malicious software designed to harm or exploit any programmable device or network." },
-                { "ransomware", "Ransomware is a type of malware that encrypts files and demands payment for the decryption key." },
-                { "firewall", "A firewall is a network security system that monitors and controls incoming and outgoing network traffic." },
-                { "antivirus", "Antivirus software is designed to detect and destroy computer viruses and other malicious software." },
-                { "password", "A strong password should be at least 12 characters long and include a mix of letters, numbers, and symbols." },
-                { "social engineering", "Social engineering is the psychological manipulation of people into performing actions or divulging confidential information." },
-                { "How are you?"," I'm good thanks. How can I assist you today?" },
-                { "What's your purpose?","I'm here to help you stay safe online by giving cybersecurity advice" },
-                { "What can I ask you about?", "You can ask me about cybersecurity, phishing,malware,ransomeware,firewall,antiviruses, passwords ,and social engineering" },
-                { "help", "You can ask about cybersecurity, phishing,malware,ransomeware,firewall,antiviruses, passwords ,and social engineering" },
-                { "What is your name?","I'm the Cybersecurity ChatBot, here to assist you with your cybersecurity questions." },
-                { "Tell me a joke", "Why did the computer go to therapy? Because it had too many bytes!" },
-                { "Tell me a fun fact", "Did you know that the first computer virus was created in 1983?" },
+            { "cybersecurity", "Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks." },
+            { "phishing", "Phishing is a type of cyber attack where attackers impersonate legitimate organizations to steal sensitive information." },
+            { "malware", "Malware is malicious software designed to harm or exploit any programmable device or network." },
+            { "ransomware", "Ransomware is a type of malware that encrypts files and demands payment for the decryption key." },
+            { "firewall", "A firewall is a network security system that monitors and controls incoming and outgoing network traffic." },
+            { "antivirus", "Antivirus software is designed to detect and destroy computer viruses and other malicious software." },
+            { "password", "A strong password should be at least 12 characters long and include a mix of letters, numbers, and symbols." },
+            { "social engineering", "Social engineering is the psychological manipulation of people into performing actions or divulging confidential information." },
+            { "How are you?"," I'm good thanks. How can I assist you today?" },
+            { "What's your purpose?","I'm here to help you stay safe online by giving cybersecurity advice" },
+            { "What can I ask you about?", "You can ask me about cybersecurity, phishing,malware,ransomeware,firewall,antiviruses, passwords ,and social engineering" },
+            { "help", "You can ask about cybersecurity, phishing,malware,ransomeware,firewall,antiviruses, passwords ,and social engineering" },
+            { "What is your name?","I'm the Cybersecurity ChatBot, here to assist you with your cybersecurity questions." },
+            { "Tell me a joke", "Why did the computer go to therapy? Because it had too many bytes!" },
+            { "Tell me a fun fact", "Did you know that the first computer virus was created in 1983?" },
+
+//cybersecurity follow up questions
+{ "What are the most common cyber threats?", "The most common cyber threats include phishing, malware, ransomware, social engineering, and denial-of-service attacks." },
+{ "How can I protect my personal information online?", "Protect your personal information by using strong passwords, enabling two-factor authentication, avoiding suspicious links, and keeping your software updated." },
+{ "What is the importance of cybersecurity in daily life?", "Cybersecurity is important to protect your personal data, financial information, and privacy from cybercriminals and online threats." },
+
+//phishing follow up questions
+{ "How can I recognize a phishing email?", "Phishing emails often have urgent messages, suspicious links, spelling errors, and ask for sensitive information. Always verify the sender's address." },
+{ "What should I do if I clicked a phishing link?", "If you clicked a phishing link, disconnect from the internet, run a security scan, change your passwords, and monitor your accounts for suspicious activity." },
+{ "Are there tools to help prevent phishing attacks?", "Yes, use email filters, browser security extensions, and keep your antivirus software updated to help prevent phishing attacks." },
+
+//malware follow up questions 
+{ "What are the signs of a malware infection?", "Signs of malware infection include slow performance, unexpected pop-ups, new toolbars, and programs opening or closing automatically." },
+{ "How do I remove malware from my computer?", "To remove malware, run a full scan with updated antivirus software and follow its removal instructions. In severe cases, seek professional help." },
+{ "What types of malware exist?", "Common types of malware include viruses, worms, trojans, ransomware, spyware, and adware." },
+
+//ransomware follow up questions
+{ "What should I do if my files are encrypted by ransomware?", "Disconnect from the network, do not pay the ransom, and seek professional help. Restore files from backups if available." },
+{ "How can I prevent ransomware attacks?", "Prevent ransomware by keeping backups, updating software, avoiding suspicious links, and using strong security tools." },
+{ "Should I pay the ransom if infected?", "It is not recommended to pay the ransom, as it does not guarantee file recovery and encourages further attacks." },
+
+//firewall follow up questions
+{ "What is the difference between hardware and software firewalls?", "Hardware firewalls protect your entire network, while software firewalls protect individual devices. Both are important for layered security." },
+{ "How do I configure a firewall?", "Configure a firewall by following the manufacturer's instructions, blocking unnecessary ports, and allowing only trusted applications." },
+{ "Can a firewall block all cyber attacks?", "A firewall is a strong defense, but it cannot block all attacks. Use it alongside other security measures for best protection." },
+
+//antivirus follow up questions
+{ "How often should I run antivirus scans?", "Run antivirus scans at least once a week and enable real-time protection for continuous monitoring." },
+{ "What features should I look for in antivirus software?", "Look for real-time protection, automatic updates, malware removal, and web protection features in antivirus software." },
+{ "Can antivirus software detect all threats?", "No antivirus can detect all threats, but keeping it updated and using safe browsing habits greatly reduces your risk." },
+
+//password follow up questions
+{ "How do I create a strong password?", "Create a strong password by using at least 12 characters, mixing uppercase, lowercase, numbers, and symbols, and avoiding common words." },
+{ "What is a password manager?", "A password manager is a tool that securely stores and manages your passwords, helping you use unique passwords for every account." },
+{ "How often should I change my passwords?", "Change your passwords regularly, especially if you suspect a breach or if the service recommends it." },
+
+//social engineering follow up questions
+{ "What are common social engineering techniques?","Common techniques include phishing, pretexting, baiting, and impersonation to trick people into revealing information." },
+{ "How can I avoid falling victim to social engineering?","Be cautious with unsolicited requests, verify identities, and never share sensitive information without confirmation." },
+{ "Can social engineering happen over the phone?","Yes, attackers often use phone calls to impersonate trusted individuals and extract confidential information." }
 
 
-            };
-
-            
+  };
 
 
-    Dictionary<string, List<string>> keywordGroups = new Dictionary<string, List<string>>
-    {
-    { "cybersecurity", new List<string> { "cyber security", "online safety", "information security", "cyber attack", "cyber threats" } },
-    { "phishing", new List<string> { "phishing emails", "phishing", "fake emails", "email scam", "spear phishing", "phishing attack" } },
-    { "malware", new List<string> { "malicious software", "virus", "trojan", "worm", "spyware", "adware", "malware infection" } },
-    { "ransomware", new List<string> { "ransomware attack", "encrypted files", "pay ransom", "ransom demand" } },
-    { "firewall", new List<string> { "network firewall", "firewall protection", "block traffic", "security firewall" } },
-    { "antivirus", new List<string> { "antivirus software", "virus protection", "antimalware", "scan for viruses" } },
-    { "password", new List<string> { "strong password", "password security", "password manager", "password protection" } },
-    { "social engineering", new List<string> { "social engineering attack", "manipulation", "pretexting", "baiting", "impersonation" } }
-    };
+      Dictionary<string, List<string>> keywordGroups = new Dictionary<string, List<string>>
+{
+{ "cybersecurity", new List<string> { "cyber security", "online safety", "information security", "cyber attack" } },
+{ "phishing", new List<string> { "phishing emails", "phishing", "fake emails", "email scam", "spear phishing", "phishing attack" } },
+{ "malware", new List<string> { "malicious software", "virus", "trojan", "worm", "spyware", "adware", "malware infection" } },
+{ "ransomware", new List<string> { "ransomware attack", "encrypted files", "pay ransom", "ransom demand" } },
+{ "firewall", new List<string> { "network firewall", "firewall protection", "block traffic", "security firewall" } },
+{ "antivirus", new List<string> { "antivirus software", "virus protection", "antimalware", "scan for viruses" } },
+{ "password", new List<string> { "strong password", "password security", "password manager", "password protection" } },
+{ "social engineering", new List<string> { "social engineering attack", "manipulation", "pretexting", "baiting", "impersonation" } },
+
+//cybersecurity follow up question synonyms
+{ "What are the most common cyber threats?", new List<string> { "common cyber threats", "most common cyber threats","cyber threats" } },
+{ "How can I protect my personal information online?", new List<string> { "protect personal information", "protect my personal information" } },
+{ "What is the importance of cybersecurity in daily life?", new List<string> { "importance of cybersecurity", "importance of cyber security" } },
+
+//phishing follow up question synonyms
+{ "How can I recognize a phishing email?", new List<string> { "recognize phishing email", "phishing email signs" } },
+{ "What should I do if I clicked a phishing link?", new List<string> { "clicked phishing link", "clicked on a phishing link" } },
+{ "Are there tools to help prevent phishing attacks?", new List<string> { "tools to prevent phishing", "prevent phishing attacks" } },
+
+//malware follow up question synonyms
+{ "What are the signs of a malware infection?", new List<string> { "signs of malware infection", "malware infection signs" } },
+{ "How do I remove malware from my computer?", new List<string> { "remove malware from computer", "remove malware" } },
+{ "What types of malware exist?", new List<string> { "types of malware", "different types of malware" } },
+
+//ransomware follow up question synonyms
+{ "What should I do if my files are encrypted by ransomware?", new List<string> { "files encrypted by ransomware", "ransomware encrypted files" } },
+{ "How can I prevent ransomware attacks?", new List<string> { "prevent ransomware attacks", "ransomware prevention" } },
+{ "Should I pay the ransom if infected?", new List<string> { "pay ransom if infected", "pay ransom" } },
+
+//firewall follow up question synonyms
+{ "What is the difference between hardware and software firewalls?", new List<string> { "difference between hardware and software firewalls", "hardware vs software firewall" } },
+{ "How do I configure a firewall?", new List<string> { "configure a firewall", "firewall configuration" } },
+{ "Can a firewall block all cyber attacks?", new List<string> { "firewall block all cyber attacks", "firewall protection" } },
+
+//antivirus follow up question synonyms
+{ "How often should I run antivirus scans?", new List<string> { "run antivirus scans", "antivirus scan frequency" } },
+{ "What features should I look for in antivirus software?", new List<string> { "features of antivirus software", "antivirus software features" } },
+{ "Can antivirus software detect all threats?", new List<string> { "antivirus detect all threats", "antivirus software detection" } },
+
+//password follow up question synonyms
+{ "How do I create a strong password?", new List<string> { "create strong password", "strong password tips" } },
+{ "What is a password manager?", new List<string> { "password manager", "what is a password manager" } },
+{ "How often should I change my passwords?", new List<string> { "change passwords frequency", "how often to change passwords" } },
+
+//social engineering follow up question synonyms
+
+{ "What are common social engineering techniques?", new List<string> { "common social engineering techniques", "social engineering techniques" } },
+{ "How can I avoid falling victim to social engineering?", new List<string> { "avoid social engineering", "prevent social engineering" } },
+{ "Can social engineering happen over the phone?", new List<string> { "social engineering over the phone", "phone social engineering" } },
 
 
-            Dictionary<string, string> followUpQuestions = new Dictionary<string, string>
-            {
-                { "Tell me more about cybersecurity", "Would you like to know more about specific cybersecurity threats or best practices?" },
-                { "Tell me more about phishing", "Are you interested in learning how to recognize phishing attempts?" },
-                { "Tell me more about malware", "Would you like tips on how to protect your device from malware?" },
-                { "Tell me more about ransomware", "Do you want to know how to recover from a ransomware attack?" },
-                { "Tell me more about firewall", "Would you like to learn how to configure a firewall for better security?" },
-                { "Tell me more about antivirus", "Are you looking for recommendations on antivirus software?" },
-                { "Tell me more about password", "Would you like tips on creating strong passwords?" },
-                { "Tell me more about social engineering", "Do you want to learn how to avoid falling victim to social engineering attacks?" }
-            };
-             
+};
 
-
+            //Check if the input contains any of the keywords
             bool foundResponse = false;
 
             chatHistory.Add($"{userName}: {input}");
@@ -214,9 +281,15 @@ namespace CybersecurityChatBot_PART2
             }
             if (!foundResponse)
             {
-                RespondWithSpeech("I'm sorry, I don't have information on that topic. Enter the word 'help' to see what you can ask about. ");
+                RespondWithSpeech("Sorry, I don't understand. Type 'help' to see what you can ask. ");
             }
         }
+
+
+
+
+
+        //Display a random security tip
         static void DisplayTipOfTheDay()
         {
             string[] tips = new string[]
