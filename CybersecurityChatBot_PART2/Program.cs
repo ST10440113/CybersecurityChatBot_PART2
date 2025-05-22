@@ -54,7 +54,7 @@ namespace CybersecurityChatBot_PART2
             }
 
             Console.WriteLine(new string('=', Console.WindowWidth));   //bottom border
-            TypingEffect("Welcome to the Cybersecurity ChatBot!\n");
+            TypingEffect("Welcome to the Cybersecurity Awareness ChatBot!\n");
 
             //Ask for the users name
             Console.ForegroundColor = ConsoleColor.Cyan;
