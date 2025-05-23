@@ -70,6 +70,16 @@ namespace CybersecurityChatBot_PART2
             //Display topics that the user can ask about
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine(new string('-', 50));
+            Console.WriteLine("You can ask me about the following topics:");
+            Console.WriteLine("1. Cybersecurity");
+            Console.WriteLine("2. Phishing");
+            Console.WriteLine("3. Malware");
+            Console.WriteLine("4. Ransomware");
+            Console.WriteLine("5. Firewall");
+            Console.WriteLine("6. Antivirus");
+            Console.WriteLine("7. Passwords");
+            Console.WriteLine("8. Social Engineering");
+            Console.WriteLine(new string('-', 50));
 
             //Start the chat loop
             while (true)
@@ -94,8 +104,9 @@ namespace CybersecurityChatBot_PART2
                     RespondWithSpeech(" Stay safe and think before you click online. Goodbye!");
                     break;
                 }
+                CompareChatHistoryToInput(userInput);
                 HandleUserQuery(userInput, userName);
-
+               
             }
 
             //Save chat history when exiting
@@ -391,10 +402,9 @@ namespace CybersecurityChatBot_PART2
             {
                 RespondWithSpeech("Sorry, I don't understand. Type 'help' to see what you can ask. ");
             }
+            
+           
         }
-
-        
-
 
 
 
@@ -413,6 +423,7 @@ namespace CybersecurityChatBot_PART2
             LoadingEffect();
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine($"\nSecurity Tip of the Day: {tips[tipIndex]}");
+
         }
 
         static void TypingEffect(string message, int delay = 30)
@@ -450,22 +461,24 @@ namespace CybersecurityChatBot_PART2
             Console.WriteLine($"Chat history saved successfully to {filePath}");
         }
 
-        static void RecallChatHistory() {
+        public static void CompareChatHistoryToInput(string userInput)
+        {
             string filePath = "chat_history.txt";
-            if (File.Exists(filePath))
+
+            if (!File.Exists(filePath))
+                return;
+
+            string[] history = File.ReadAllLines(filePath);
+
+            foreach (string line in history)
             {
-                string[] lines = File.ReadAllLines(filePath);
-                Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.WriteLine("Chat History:");
-                foreach (string line in lines)
+                if (line.ToLower().Contains(userInput.ToLower()) && !string.IsNullOrWhiteSpace(userInput))
                 {
-                    Console.WriteLine(line);
+                    
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    TypingEffect($"Chatbot: Since you have mentioned '{userInput}' in our previous conversation, you will be interested to know that");
+                    break;
                 }
-            }
-            else
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"Error: the file '{filePath}' was not found");
             }
         }
 
