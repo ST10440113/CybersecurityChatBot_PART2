@@ -484,7 +484,7 @@ namespace CybersecurityChatBot_PART2
 
             if (!found)
             {
-                Console.ForegroundColor = ConsoleColor.Red;
+                Console.ForegroundColor = ConsoleColor.Magenta;
                 TypingEffect($"Chatbot: Since you're interested in '{userInput}' I'll remember it for our next conversation :)");
             }
         }
