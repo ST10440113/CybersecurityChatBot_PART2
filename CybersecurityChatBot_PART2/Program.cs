@@ -423,6 +423,7 @@ namespace CybersecurityChatBot_PART2
             LoadingEffect();
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine($"\nSecurity Tip of the Day: {tips[tipIndex]}");
+            Console.WriteLine();
 
         }
 
@@ -464,21 +465,27 @@ namespace CybersecurityChatBot_PART2
         public static void CompareChatHistoryToInput(string userInput)
         {
             string filePath = "chat_history.txt";
-
-            if (!File.Exists(filePath))
+            if (!File.Exists(filePath) || string.IsNullOrWhiteSpace(userInput))
                 return;
 
             string[] history = File.ReadAllLines(filePath);
+            bool found = false;
 
             foreach (string line in history)
             {
-                if (line.ToLower().Contains(userInput.ToLower()) && !string.IsNullOrWhiteSpace(userInput))
+                if (line.ToLower().Contains(userInput.ToLower()))
                 {
-                    
                     Console.ForegroundColor = ConsoleColor.Cyan;
                     TypingEffect($"Chatbot: Since you have mentioned '{userInput}' in our previous conversation, you will be interested to know that");
+                    found = true;
                     break;
                 }
+            }
+
+            if (!found)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                TypingEffect($"Chatbot: Since you're interested in '{userInput}' I'll remember it for our next conversation :)");
             }
         }
 
