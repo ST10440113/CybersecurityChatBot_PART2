@@ -14,7 +14,7 @@ namespace CybersecurityChatBot_PART2
     {
         static List<string> chatHistory = new List<string>();
         static SpeechSynthesizer synth = new SpeechSynthesizer
-        {
+        { 
             Volume = 100,
             Rate = 0
         };
@@ -71,14 +71,14 @@ namespace CybersecurityChatBot_PART2
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine(new string('-', 50));
             Console.WriteLine("You can ask me about the following topics:");
-            Console.WriteLine("1. Cybersecurity");
-            Console.WriteLine("2. Phishing");
-            Console.WriteLine("3. Malware");
-            Console.WriteLine("4. Ransomware");
-            Console.WriteLine("5. Firewall");
-            Console.WriteLine("6. Antivirus");
-            Console.WriteLine("7. Passwords");
-            Console.WriteLine("8. Social Engineering");
+            Console.WriteLine("- Cybersecurity");
+            Console.WriteLine("- Phishing");
+            Console.WriteLine("- Malware");
+            Console.WriteLine("- Ransomware");
+            Console.WriteLine("- Firewall");
+            Console.WriteLine("- Antivirus");
+            Console.WriteLine("- Passwords");
+            Console.WriteLine("- Social Engineering");
             Console.WriteLine(new string('-', 50));
 
             //Start the chat loop
