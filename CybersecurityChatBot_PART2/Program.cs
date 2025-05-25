@@ -16,7 +16,7 @@ namespace CybersecurityChatBot_PART2
         static SpeechSynthesizer synth = new SpeechSynthesizer
         { 
             Volume = 100,
-            Rate = 2
+            Rate = 0 // Set the speech rate to normal speed
 
         };
 
@@ -144,6 +144,7 @@ namespace CybersecurityChatBot_PART2
 
         static void HandleUserQuery(string input, string userName)
         {
+            string preparedInput = input.Trim().ToLower();
             Dictionary<string, string> responses = new Dictionary<string, string>
             {
             { "cybersecurity", "Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks." },
@@ -371,25 +372,41 @@ namespace CybersecurityChatBot_PART2
 
 };
             bool foundResponse = false;
-
             chatHistory.Add($"{userName}: {input}");
 
+            
             foreach (var entry in responses)
             {
-                if (input.Contains(entry.Key))
+                if (string.Equals(preparedInput, entry.Key, StringComparison.OrdinalIgnoreCase))
                 {
                     RespondWithSpeech(entry.Value);
                     foundResponse = true;
                     break;
                 }
             }
+
+            
+            if (!foundResponse)
+            {
+                foreach (var entry in responses)
+                {
+                    if (preparedInput.Contains(entry.Key))
+                    {
+                        RespondWithSpeech(entry.Value);
+                        foundResponse = true;
+                        break;
+                    }
+                }
+            }
+
+           
             if (!foundResponse)
             {
                 foreach (var group in keywordGroups)
                 {
                     foreach (var synonym in group.Value)
                     {
-                        if (input.Contains(synonym))
+                        if (preparedInput.Contains(synonym.ToLower()))
                         {
                             RespondWithSpeech(responses[group.Key]);
                             foundResponse = true;
@@ -397,15 +414,14 @@ namespace CybersecurityChatBot_PART2
                         }
                     }
                     if (foundResponse) break;
-
                 }
             }
+
+            
             if (!foundResponse)
             {
-                RespondWithSpeech("Sorry, I don't understand. Type 'help' to see what you can ask. ");
+                RespondWithSpeech("Sorry, I don't understand. Type 'help' to see what you can ask.");
             }
-            
-           
         }
 
 
@@ -457,7 +473,7 @@ namespace CybersecurityChatBot_PART2
 
         static void SaveChatHistory()
         {
-            string filePath = "chat_history.txt";
+            string filePath = "chat_history.txt"; 
 
             File.WriteAllLines(filePath, chatHistory);
             Console.ForegroundColor = ConsoleColor.Green;
