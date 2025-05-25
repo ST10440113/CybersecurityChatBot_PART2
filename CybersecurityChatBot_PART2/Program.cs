@@ -16,8 +16,10 @@ namespace CybersecurityChatBot_PART2
         static SpeechSynthesizer synth = new SpeechSynthesizer
         { 
             Volume = 100,
-            Rate = 0
+            Rate = 2
+
         };
+
         static Random random = new Random();
 
         static void Main(string[] args)
@@ -475,8 +477,10 @@ namespace CybersecurityChatBot_PART2
             {
                 if (line.ToLower().Contains(userInput.ToLower()))
                 {
-                    Console.ForegroundColor = ConsoleColor.Cyan;
-                    TypingEffect($"Chatbot: Since you have mentioned '{userInput}' in our previous conversation, you will be interested to know that");
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    string chatHistoryMatch = $"Since you have mentioned '{userInput}' in our previous conversation, you will be interested to know that";
+                    TypingEffect($"Chatbot: {chatHistoryMatch}\n");
+                    synth.SpeakAsync(chatHistoryMatch);
                     found = true;
                     break;
                 }
@@ -485,7 +489,10 @@ namespace CybersecurityChatBot_PART2
             if (!found)
             {
                 Console.ForegroundColor = ConsoleColor.Magenta;
-                TypingEffect($"Chatbot: Since you're interested in '{userInput}' I'll remember it for our next conversation :)");
+                string chatHistoryNoMatch = $"Since you're interested in '{userInput}' I'll remember it for our next conversation";
+                TypingEffect($"Chatbot: {chatHistoryNoMatch}\n");
+                synth.SpeakAsync(chatHistoryNoMatch);
+               
             }
         }
 
@@ -494,6 +501,7 @@ namespace CybersecurityChatBot_PART2
         {
             LoadingEffect();
             Console.ForegroundColor = ConsoleColor.Blue;
+            
             TypingEffect($"Chatbot: {response}\n");
 
 
