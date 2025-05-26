@@ -81,6 +81,8 @@ namespace CybersecurityChatBot_PART2
             Console.WriteLine("- Antivirus");
             Console.WriteLine("- Passwords");
             Console.WriteLine("- Social Engineering");
+            Console.WriteLine("- Data Breaches");
+
             Console.WriteLine(new string('-', 50));
 
             //Start the chat loop
@@ -155,6 +157,7 @@ namespace CybersecurityChatBot_PART2
             { "antivirus", "Antivirus software is designed to detect and destroy computer viruses and other malicious software." },
             { "password", "A strong password should be at least 12 characters long and include a mix of letters, numbers, and symbols." },
             { "social engineering", "Social engineering is the psychological manipulation of people into performing actions or divulging confidential information." },
+            { "data breaches", "A data breach is an incident where sensitive, protected, or confidential data is accessed or disclosed without authorization." },
             { "How are you?"," I'm good thanks. How can I assist you today?" },
             { "What's your purpose?","I'm here to help you stay safe online by giving cybersecurity advice" },
             { "What can I ask you about?", "You can ask me about cybersecurity, phishing,malware,ransomeware,firewall,antiviruses, passwords ,and social engineering" },
@@ -253,8 +256,17 @@ namespace CybersecurityChatBot_PART2
  //social engineering statements with emotion
  { "I feel vulnerable to social engineering attacks", "It's normal to feel vulnerable. Awareness and caution can help you avoid falling victim." },
  { "I'm worried about sharing personal information", "Your concern is valid. Always verify the identity of the person requesting information." },
- { "I don't know how to spot social engineering attempts", "Look for unusual requests, urgency, and verify the source before sharing any information." }
+ { "I don't know how to spot social engineering attempts", "Look for unusual requests, urgency, and verify the source before sharing any information." },
 
+//data breach follow up questions
+{ "How can I protect myself from data breaches?", "To protect yourself, use strong passwords, enable two-factor authentication, and monitor your accounts for suspicious activity." },
+{ "What should I do if my data is breached?", "If your data is breached, change your passwords immediately, monitor your accounts for unusual activity, and consider credit monitoring services." },
+{ "What are the consequences of a data breach?", "The consequences of a data breach can include financial loss, identity theft, reputational damage, and legal penalties for organizations." },
+
+//data breach statements with emotion
+{ "I feel violated if my data is breached", "It's completely understandable to feel violated. Data breaches can have serious implications, and it's important to take steps to protect yourself." },
+{ "I'm worried about my personal information being exposed", "Your concern is valid. Data breaches can expose sensitive information, so it's crucial to stay vigilant and take preventive measures." },
+{ "I don't know how to check if my data has been breached", "You can check if your data has been breached by using services which allow you to see if your email or personal information has been compromised." }
 
   };
 
@@ -269,6 +281,7 @@ namespace CybersecurityChatBot_PART2
 { "antivirus", new List<string> { "antivirus software", "virus protection", "antimalware", "scan for viruses" } },
 { "password", new List<string> { "strong password", "password security", "password manager", "password protection" } },
 { "social engineering", new List<string> { "social engineering attack", "manipulation", "pretexting", "baiting", "impersonation" } },
+{ "data breaches", new List<string> { "data breach", "personal data exposure", "data leak", "information theft" } },
 
 //cybersecurity follow up question synonyms
 { "What are the most common cyber threats?", new List<string> { "common cyber threats", "most common cyber threats","cyber threats" } },
@@ -364,7 +377,20 @@ namespace CybersecurityChatBot_PART2
 //social engineering emotional statement synonyms
 { "I feel vulnerable to social engineering attacks.", new List<string> { "vulnerable to social engineering", "worried about social engineering" } },
 { "I'm worried about sharing personal information.", new List<string> { "worried about sharing information", "concerned about sharing information" } },
-{ "I don't know how to spot social engineering attempts.", new List<string> { "spot social engineering", "identify social engineering" } }
+{ "I don't know how to spot social engineering attempts.", new List<string> { "spot social engineering", "identify social engineering" } },
+
+//data breach follow up question synonyms
+{ "How can I protect myself from data breaches?", new List<string> { "protect from data breaches", "data breach protection" } },
+{ "What should I do if my data is breached?", new List<string> { "data breach response", "what to do if data is breached" } },
+{ "What are the consequences of a data breach?", new List<string> { "consequences of data breach", "data breach impact" } },
+
+//data breach emotional statement synonyms
+{ "I feel violated if my data is breached.", new List<string> { "violated by data breach", "feel violated data breach", "data breach makes me feel violated" } },
+{ "I'm worried about my personal information being exposed.", new List<string> { "worried about personal information exposure", "concerned about personal data exposure", "afraid my data is exposed" } },
+{ "I don't know how to check if my data has been breached.", new List<string> { "don't know if data breached", "how to check data breach", "unsure if my data is breached" } },
+
+
+
 
 
 };
