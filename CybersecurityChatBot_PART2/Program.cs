@@ -284,110 +284,110 @@ namespace CybersecurityChatBot_PART2
 { "data breaches", new List<string> { "data breach", "personal data exposure", "data leak", "information theft" } },
 
 //cybersecurity follow up question synonyms
-{ "What are the most common cyber threats?", new List<string> { "common cyber threats", "most common cyber threats","cyber threats" } },
+{ "What are the most common cyber threats", new List<string> { "common cyber threats", "most common cyber threats","cyber threats" } },
 { "How can I protect my personal information online?", new List<string> { "protect personal information", "protect my personal information" } },
 { "What is the importance of cybersecurity in daily life?", new List<string> { "importance of cybersecurity", "importance of cyber security" } },
 
 //cybersecurity emotional statement synonyms
-{ "I feel overwhelmed by cybersecurity threats.", new List<string> { "overwhelmed by cybersecurity threats", "overwhelmed by cyber threats" } },
-{ "I'm worried about my online privacy.", new List<string> { "worried about online privacy", "concerned about online privacy" } },
-{ "I don't know where to start with cybersecurity.", new List<string> { "start with cybersecurity", "begin with cybersecurity" } },
+{ "I feel overwhelmed by cybersecurity threats", new List<string> { "overwhelmed by cybersecurity threats", "overwhelmed by cyber threats" } },
+{ "I'm worried about my online privacy", new List<string> { "worried about online privacy", "concerned about online privacy" } },
+{ "I don't know where to start with cybersecurity", new List<string> { "start with cybersecurity", "begin with cybersecurity" } },
 
 
 
 //phishing follow up question synonyms
-{ "How can I recognize a phishing email?", new List<string> { "recognize phishing email", "phishing email signs" } },
-{ "What should I do if I clicked a phishing link?", new List<string> { "clicked phishing link", "clicked on a phishing link" } },
-{ "Are there tools to help prevent phishing attacks?", new List<string> { "tools to prevent phishing", "prevent phishing attacks" } },
+{ "How can I recognize a phishing email", new List<string> { "recognize phishing email", "phishing email signs" } },
+{ "What should I do if I clicked a phishing link", new List<string> { "clicked phishing link", "clicked on a phishing link" } },
+{ "Are there tools to help prevent phishing attacks", new List<string> { "tools to prevent phishing", "prevent phishing attacks" } },
 
 //phishing emotional statement synonyms
-{ "I feel anxious about phishing attacks.", new List<string> { "anxious about phishing attacks", "worried about phishing attacks" } },
-{ "I'm frustrated with all the phishing emails I receive.", new List<string> { "frustrated with phishing emails", "tired of phishing emails" } },
-{ "I don't trust emails anymore.", new List<string> { "don't trust emails", "suspicious of emails" } },
+{ "I feel anxious about phishing attacks", new List<string> { "anxious about phishing attacks", "worried about phishing attacks" } },
+{ "I'm frustrated with all the phishing emails I receive", new List<string> { "frustrated with phishing emails", "tired of phishing emails" } },
+{ "I don't trust emails anymore", new List<string> { "don't trust emails", "suspicious of emails" } },
 
 
 
 //malware follow up question synonyms
-{ "What are the signs of a malware infection?", new List<string> { "signs of malware infection", "malware infection signs" } },
-{ "How do I remove malware from my computer?", new List<string> { "remove malware from computer", "remove malware" } },
-{ "What types of malware exist?", new List<string> { "types of malware", "different types of malware" } },
+{ "What are the signs of a malware infection", new List<string> { "signs of malware infection", "malware infection signs" } },
+{ "How do I remove malware from my computer", new List<string> { "remove malware from computer", "remove malware" } },
+{ "What types of malware exist", new List<string> { "types of malware", "different types of malware" } },
 
 //malware emotional statement synonyms
-{ "I'm scared of getting malware on my computer.", new List<string> { "scared of malware", "worried about malware" } },
-{ "I feel helpless against malware attacks.", new List<string> { "helpless against malware", "powerless against malware" } },
-{ "I don't know how to check for malware.", new List<string> { "check for malware", "scan for malware" } },
+{ "I'm scared of getting malware on my computer", new List<string> { "scared of malware", "worried about malware" } },
+{ "I feel helpless against malware attacks", new List<string> { "helpless against malware", "powerless against malware" } },
+{ "I don't know how to check for malware", new List<string> { "check for malware", "scan for malware" } },
 
 
 
 //ransomware follow up question synonyms
-{ "What should I do if my files are encrypted by ransomware?", new List<string> { "files encrypted by ransomware", "ransomware encrypted files" } },
-{ "How can I prevent ransomware attacks?", new List<string> { "prevent ransomware attacks", "ransomware prevention" } },
-{ "Should I pay the ransom if infected?", new List<string> { "pay ransom if infected", "pay ransom" } },
+{ "What should I do if my files are encrypted by ransomware", new List<string> { "files encrypted by ransomware", "ransomware encrypted files" } },
+{ "How can I prevent ransomware attacks", new List<string> { "prevent ransomware attacks", "ransomware prevention" } },
+{ "Should I pay the ransom if infected", new List<string> { "pay ransom if infected", "pay ransom" } },
 
 //ransomware emotional statement synonyms
-{ "I feel hopeless if I get ransomware.", new List<string> { "hopeless about ransomware", "worried about ransomware" } },
-{ "I'm worried about losing my files to ransomware.", new List<string> { "worried about losing files", "concerned about losing files" } },
-{ "I don't know how to back up my data.", new List<string> { "back up data", "how to back up data" } },
+{ "I feel hopeless if I get ransomware", new List<string> { "hopeless about ransomware", "worried about ransomware" } },
+{ "I'm worried about losing my files to ransomware", new List<string> { "worried about losing files", "concerned about losing files" } },
+{ "I don't know how to back up my data", new List<string> { "back up data", "how to back up data" } },
 
 
 
 
 //firewall follow up question synonyms
-{ "What is the difference between hardware and software firewalls?", new List<string> { "difference between hardware and software firewalls", "hardware vs software firewall" } },
-{ "How do I configure a firewall?", new List<string> { "configure a firewall", "firewall configuration" } },
-{ "Can a firewall block all cyber attacks?", new List<string> { "firewall block all cyber attacks", "firewall protection" } },
+{ "What is the difference between hardware and software firewalls", new List<string> { "difference between hardware and software firewalls", "hardware vs software firewall" } },
+{ "How do I configure a firewall", new List<string> { "configure a firewall", "firewall configuration" } },
+{ "Can a firewall block all cyber attacks", new List<string> { "firewall block all cyber attacks", "firewall protection" } },
 
 //firewall emotional statement synonyms
-{ "I feel confused about firewalls.", new List<string> { "confused about firewalls", "uncertain about firewalls" } },
-{ "I'm worried my firewall isn't enough.", new List<string> { "worried about firewall", "concerned about firewall" } },
-{ "I don't know how to check if my firewall is working.", new List<string> { "check if firewall is working", "test firewall" } },
+{ "I feel confused about firewalls", new List<string> { "confused about firewalls", "uncertain about firewalls" } },
+{ "I'm worried my firewall isn't enough", new List<string> { "worried about firewall", "concerned about firewall" } },
+{ "I don't know how to check if my firewall is working", new List<string> { "check if firewall is working", "test firewall" } },
 
 
 
 //antivirus follow up question synonyms
-{ "How often should I run antivirus scans?", new List<string> { "run antivirus scans", "antivirus scan frequency" } },
-{ "What features should I look for in antivirus software?", new List<string> { "features of antivirus software", "antivirus software features" } },
-{ "Can antivirus software detect all threats?", new List<string> { "antivirus detect all threats", "antivirus software detection" } },
+{ "How often should I run antivirus scans", new List<string> { "run antivirus scans", "antivirus scan frequency" } },
+{ "What features should I look for in antivirus software", new List<string> { "features of antivirus software", "antivirus software features" } },
+{ "Can antivirus software detect all threats", new List<string> { "antivirus detect all threats", "antivirus software detection" } },
 
 //antivirus emotional statement synonyms
-{ "I feel overwhelmed by antivirus options.", new List<string> { "overwhelmed by antivirus", "confused about antivirus options" } },
-{ "I'm worried my antivirus isn't enough.", new List<string> { "worried about antivirus", "concerned about antivirus" } },
-{ "I don't know how to update my antivirus software.", new List<string> { "update antivirus software", "how to update antivirus" } },
+{ "I feel overwhelmed by antivirus options", new List<string> { "overwhelmed by antivirus", "confused about antivirus options" } },
+{ "I'm worried my antivirus isn't enough", new List<string> { "worried about antivirus", "concerned about antivirus" } },
+{ "I don't know how to update my antivirus software", new List<string> { "update antivirus software", "how to update antivirus" } },
 
 
 
 //password follow up question synonyms
-{ "How do I create a strong password?", new List<string> { "create strong password", "strong password tips" } },
-{ "What is a password manager?", new List<string> { "password manager", "what is a password manager" } },
-{ "How often should I change my passwords?", new List<string> { "change passwords frequency", "how often to change passwords" } },
+{ "How do I create a strong password", new List<string> { "create strong password", "strong password tips" } },
+{ "What is a password manager", new List<string> { "password manager", "what is a password manager" } },
+{ "How often should I change my passwords", new List<string> { "change passwords frequency", "how often to change passwords" } },
 
 //password emotional statement synonyms
-{ "I feel stressed about remembering passwords.", new List<string> { "stressed about passwords", "worried about remembering passwords" } },
-{ "I'm worried about my password security.", new List<string> { "worried about password security", "concerned about password security" } },
-{ "I don't know how to create a strong password.", new List<string> { "create strong password", "how to create strong password" } },
+{ "I feel stressed about remembering passwords", new List<string> { "stressed about passwords", "worried about remembering passwords" } },
+{ "I'm worried about my password security", new List<string> { "worried about password security", "concerned about password security" } },
+{ "I don't know how to create a strong password", new List<string> { "create strong password", "how to create strong password" } },
 
 
 
 //social engineering follow up question synonyms
 
-{ "What are common social engineering techniques?", new List<string> { "common social engineering techniques", "social engineering techniques" } },
-{ "How can I avoid falling victim to social engineering?", new List<string> { "avoid social engineering", "prevent social engineering" } },
-{ "Can social engineering happen over the phone?", new List<string> { "social engineering over the phone", "phone social engineering" } },
+{ "What are common social engineering techniques", new List<string> { "common social engineering techniques", "social engineering techniques" } },
+{ "How can I avoid falling victim to social engineering", new List<string> { "avoid social engineering", "prevent social engineering" } },
+{ "Can social engineering happen over the phone", new List<string> { "social engineering over the phone", "phone social engineering" } },
 
 //social engineering emotional statement synonyms
-{ "I feel vulnerable to social engineering attacks.", new List<string> { "vulnerable to social engineering", "worried about social engineering" } },
-{ "I'm worried about sharing personal information.", new List<string> { "worried about sharing information", "concerned about sharing information" } },
-{ "I don't know how to spot social engineering attempts.", new List<string> { "spot social engineering", "identify social engineering" } },
+{ "I feel vulnerable to social engineering attacks", new List<string> { "vulnerable to social engineering", "worried about social engineering" } },
+{ "I'm worried about sharing personal information", new List<string> { "worried about sharing information", "concerned about sharing information" } },
+{ "I don't know how to spot social engineering attempts", new List<string> { "spot social engineering", "identify social engineering" } },
 
 //data breach follow up question synonyms
-{ "How can I protect myself from data breaches?", new List<string> { "protect from data breaches", "data breach protection" } },
-{ "What should I do if my data is breached?", new List<string> { "data breach response", "what to do if data is breached" } },
-{ "What are the consequences of a data breach?", new List<string> { "consequences of data breach", "data breach impact" } },
+{ "How can I protect myself from data breaches", new List<string> { "protect from data breaches", "data breach protection" } },
+{ "What should I do if my data is breached", new List<string> { "data breach response", "what to do if data is breached" } },
+{ "What are the consequences of a data breach", new List<string> { "consequences of data breach", "data breach impact" } },
 
 //data breach emotional statement synonyms
-{ "I feel violated if my data is breached.", new List<string> { "violated by data breach", "feel violated data breach", "data breach makes me feel violated" } },
-{ "I'm worried about my personal information being exposed.", new List<string> { "worried about personal information exposure", "concerned about personal data exposure", "afraid my data is exposed" } },
-{ "I don't know how to check if my data has been breached.", new List<string> { "don't know if data breached", "how to check data breach", "unsure if my data is breached" } },
+{ "I feel violated if my data is breached", new List<string> { "violated by data breach", "feel violated data breach", "data breach makes me feel violated" } },
+{ "I'm worried about my personal information being exposed", new List<string> { "worried about personal information exposure", "concerned about personal data exposure", "afraid my data is exposed" } },
+{ "I don't know how to check if my data has been breached", new List<string> { "don't know if data breached", "how to check data breach", "unsure if my data is breached" } },
 
 
 
