@@ -159,104 +159,101 @@ namespace CybersecurityChatBot_PART2
             { "What's your purpose?","I'm here to help you stay safe online by giving cybersecurity advice" },
             { "What can I ask you about?", "You can ask me about cybersecurity, phishing,malware,ransomeware,firewall,antiviruses, passwords ,and social engineering" },
             { "help", "You can ask about cybersecurity, phishing,malware,ransomeware,firewall,antiviruses, passwords ,and social engineering" },
-            { "What is your name?","I'm the Cybersecurity ChatBot, here to assist you with your cybersecurity questions." },
-            { "Tell me a joke", "Why did the computer go to therapy? Because it had too many bytes!" },
-            { "Tell me a fun fact", "Did you know that the first computer virus was created in 1983?" },
-
+            
 //cybersecurity follow up questions
-{ "What are the most common cyber threats?", "The most common cyber threats include phishing, malware, ransomware, social engineering, and denial-of-service attacks." },
+{ "What are the most common cyber threats", "The most common cyber threats include phishing, malware, ransomware, social engineering, and denial-of-service attacks." },
 { "How can I protect my personal information online?", "Protect your personal information by using strong passwords, enabling two-factor authentication, avoiding suspicious links, and keeping your software updated." },
 { "What is the importance of cybersecurity in daily life?", "Cybersecurity is important to protect your personal data, financial information, and privacy from cybercriminals and online threats." },
 
 //cybersecurity statements with emotion
-{ "I feel overwhelmed by cybersecurity threats.", "It's understandable to feel overwhelmed. Cybersecurity can be complex, but taking small steps can help you feel more secure." },
-{ "I'm worried about my online privacy.", "Your concerns are valid. Online privacy is crucial, and there are many ways to enhance it." },
-{ "I don't know where to start with cybersecurity.", "Starting with the basics is a great approach. Focus on strong passwords and being cautious with emails." },
+{ "I feel overwhelmed by cybersecurity threats", "It's understandable to feel overwhelmed. Cybersecurity can be complex, but taking small steps can help you feel more secure." },
+{ "I'm worried about my online privacy", "Your concerns are valid. Online privacy is crucial, and there are many ways to enhance it." },
+{ "I don't know where to start with cybersecurity", "Starting with the basics is a great approach. Focus on strong passwords and being cautious with emails." },
 
 
 
 //phishing follow up questions
-{ "How can I recognize a phishing email?", "Phishing emails often have urgent messages, suspicious links, spelling errors, and ask for sensitive information. Always verify the sender's address." },
-{ "What should I do if I clicked a phishing link?", "If you clicked a phishing link, disconnect from the internet, run a security scan, change your passwords, and monitor your accounts for suspicious activity." },
-{ "Are there tools to help prevent phishing attacks?", "Yes, use email filters, browser security extensions, and keep your antivirus software updated to help prevent phishing attacks." },
+{ "How can I recognize a phishing email", "Phishing emails often have urgent messages, suspicious links, spelling errors, and ask for sensitive information. Always verify the sender's address." },
+{ "What should I do if I clicked a phishing link", "If you clicked a phishing link, disconnect from the internet, run a security scan, change your passwords, and monitor your accounts for suspicious activity." },
+{ "Are there tools to help prevent phishing attacks", "Yes, use email filters, browser security extensions, and keep your antivirus software updated to help prevent phishing attacks." },
 
 //phishing statements with emotion
-{ "I feel anxious about phishing attacks.", "It's normal to feel anxious. Staying informed and cautious can help you feel more secure." },
-{ "I'm frustrated with all the phishing emails I receive.", "I understand your frustration. Phishing attacks are common, but being vigilant can help you avoid them." },
-{ "I don't trust emails anymore.", "It's wise to be cautious with emails. Always verify the sender and avoid clicking on suspicious links." },
+{ "I feel anxious about phishing attacks", "It's normal to feel anxious. Staying informed and cautious can help you feel more secure." },
+{ "I'm frustrated with all the phishing emails I receive", "I understand your frustration. Phishing attacks are common, but being vigilant can help you avoid them." },
+{ "I don't trust emails anymore", "It's wise to be cautious with emails. Always verify the sender and avoid clicking on suspicious links." },
 
 
 
 //malware follow up questions 
-{ "What are the signs of a malware infection?", "Signs of malware infection include slow performance, unexpected pop-ups, new toolbars, and programs opening or closing automatically." },
-{ "How do I remove malware from my computer?", "To remove malware, run a full scan with updated antivirus software and follow its removal instructions. In severe cases, seek professional help." },
-{ "What types of malware exist?", "Common types of malware include viruses, worms, trojans, ransomware, spyware, and adware." },
+{ "What are the signs of a malware infection", "Signs of malware infection include slow performance, unexpected pop-ups, new toolbars, and programs opening or closing automatically." },
+{ "How do I remove malware from my computer", "To remove malware, run a full scan with updated antivirus software and follow its removal instructions. In severe cases, seek professional help." },
+{ "What types of malware exist", "Common types of malware include viruses, worms, trojans, ransomware, spyware, and adware." },
 
 //malware statements with emotion
-{ "I'm scared of getting malware on my computer.", "It's understandable to be scared. Regular updates and antivirus software can help protect you." },
-{ "I feel helpless against malware attacks.", "You are not helpless. Educating yourself and using security tools can empower you." },
-{ "I don't know how to check for malware.", "You can use antivirus software to scan your system for malware. Many programs offer free versions." },
+{ "I'm scared of getting malware on my computer", "It's understandable to be scared. Regular updates and antivirus software can help protect you." },
+{ "I feel helpless against malware attacks", "You are not helpless. Educating yourself and using security tools can empower you." },
+{ "I don't know how to check for malware", "You can use antivirus software to scan your system for malware. Many programs offer free versions." },
 
 
 
 
 //ransomware follow up questions
-{ "What should I do if my files are encrypted by ransomware?", "Disconnect from the network, do not pay the ransom, and seek professional help. Restore files from backups if available." },
-{ "How can I prevent ransomware attacks?", "Prevent ransomware by keeping backups, updating software, avoiding suspicious links, and using strong security tools." },
-{ "Should I pay the ransom if infected?", "It is not recommended to pay the ransom, as it does not guarantee file recovery and encourages further attacks." },
+{ "What should I do if my files are encrypted by ransomware", "Disconnect from the network, do not pay the ransom, and seek professional help. Restore files from backups if available." },
+{ "How can I prevent ransomware attacks", "Prevent ransomware by keeping backups, updating software, avoiding suspicious links, and using strong security tools." },
+{ "Should I pay the ransom if infected", "It is not recommended to pay the ransom, as it does not guarantee file recovery and encourages further attacks." },
 
 //ransomware statements with emotion
-{ "I feel hopeless if I get ransomware.", "It's understandable to feel hopeless. Regular backups and security measures can help you recover from such attacks." },
-{ "I'm worried about losing my files to ransomware.", "Your concern is valid. Regular backups and security practices can help protect your files." },
-{ "I don't know how to back up my data.", "Backing up data can be done using external drives or cloud storage services. It's a good practice to do it regularly." },
+{ "I feel hopeless if I get ransomware", "It's understandable to feel hopeless. Regular backups and security measures can help you recover from such attacks." },
+{ "I'm worried about losing my files to ransomware", "Your concern is valid. Regular backups and security practices can help protect your files." },
+{ "I don't know how to back up my data", "Backing up data can be done using external drives or cloud storage services. It's a good practice to do it regularly." },
 
 
 
 //firewall follow up questions
-{ "What is the difference between hardware and software firewalls?", "Hardware firewalls protect your entire network, while software firewalls protect individual devices. Both are important for layered security." },
-{ "How do I configure a firewall?", "Configure a firewall by following the manufacturer's instructions, blocking unnecessary ports, and allowing only trusted applications." },
-{ "Can a firewall block all cyber attacks?", "A firewall is a strong defense, but it cannot block all attacks. Use it alongside other security measures for best protection." },
+{ "What is the difference between hardware and software firewalls", "Hardware firewalls protect your entire network, while software firewalls protect individual devices. Both are important for layered security." },
+{ "How do I configure a firewall", "Configure a firewall by following the manufacturer's instructions, blocking unnecessary ports, and allowing only trusted applications." },
+{ "Can a firewall block all cyber attacks", "A firewall is a strong defense, but it cannot block all attacks. Use it alongside other security measures for best protection." },
 
 //firewall statements with emotion
-{ "I feel confused about firewalls.", "It's normal to feel confused. Firewalls are complex, but they are essential for network security." },
-{ "I'm worried my firewall isn't enough.", "Your concern is valid. A firewall is a crucial part of security, but it should be combined with other measures." },
-{ "I don't know how to check if my firewall is working.", "You can check your firewall settings in your operating system's security settings or use online tools to test its effectiveness." },
+{ "I feel confused about firewalls", "It's normal to feel confused. Firewalls are complex, but they are essential for network security." },
+{ "I'm worried my firewall isn't enough", "Your concern is valid. A firewall is a crucial part of security, but it should be combined with other measures." },
+{ "I don't know how to check if my firewall is working", "You can check your firewall settings in your operating system's security settings or use online tools to test its effectiveness." },
 
 
 
 //antivirus follow up questions
-{ "How often should I run antivirus scans?", "Run antivirus scans at least once a week and enable real-time protection for continuous monitoring." },
-{ "What features should I look for in antivirus software?", "Look for real-time protection, automatic updates, malware removal, and web protection features in antivirus software." },
-{ "Can antivirus software detect all threats?", "No antivirus can detect all threats, but keeping it updated and using safe browsing habits greatly reduces your risk." },
+{ "How often should I run antivirus scans", "Run antivirus scans at least once a week and enable real-time protection for continuous monitoring." },
+{ "What features should I look for in antivirus software", "Look for real-time protection, automatic updates, malware removal, and web protection features in antivirus software." },
+{ "Can antivirus software detect all threats", "No antivirus can detect all threats, but keeping it updated and using safe browsing habits greatly reduces your risk." },
 
 //antivirus statements with emotion
-{ "I feel overwhelmed by antivirus options.", "It's understandable to feel overwhelmed. Research and reviews can help you choose the right antivirus for your needs." },
-{ "I'm worried my antivirus isn't enough.", "Your concern is valid. Regular updates and safe browsing habits are essential for comprehensive protection." },
-{ "I don't know how to update my antivirus software.", "Most antivirus programs have an automatic update feature. You can also check for updates in the software settings." },
+{ "I feel overwhelmed by antivirus options", "It's understandable to feel overwhelmed. Research and reviews can help you choose the right antivirus for your needs." },
+{ "I'm worried my antivirus isn't enough", "Your concern is valid. Regular updates and safe browsing habits are essential for comprehensive protection." },
+{ "I don't know how to update my antivirus software", "Most antivirus programs have an automatic update feature. You can also check for updates in the software settings." },
 
 
 
 //password follow up questions
-{ "How do I create a strong password?", "Create a strong password by using at least 12 characters, mixing uppercase, lowercase, numbers, and symbols, and avoiding common words." },
-{ "What is a password manager?", "A password manager is a tool that securely stores and manages your passwords, helping you use unique passwords for every account." },
-{ "How often should I change my passwords?", "Change your passwords regularly, especially if you suspect a breach or if the service recommends it." },
+{ "How do I create a strong password", "Create a strong password by using at least 12 characters, mixing uppercase, lowercase, numbers, and symbols, and avoiding common words." },
+{ "What is a password manager", "A password manager is a tool that securely stores and manages your passwords, helping you use unique passwords for every account." },
+{ "How often should I change my passwords", "Change your passwords regularly, especially if you suspect a breach or if the service recommends it." },
 
 //password statements with emotion
-{ "I feel stressed about remembering passwords.", "It's normal to feel stressed. Using a password manager can help you manage and remember your passwords." },
-{ "I'm worried about my password security.", "Your concern is valid. Using strong, unique passwords and enabling two-factor authentication can enhance security." },
-{ "I don't know how to create a strong password.", "Creating a strong password involves using a mix of characters and avoiding easily guessable information." },
+{ "I feel stressed about remembering passwords", "It's normal to feel stressed. Using a password manager can help you manage and remember your passwords." },
+{ "I'm worried about my password security", "Your concern is valid. Using strong, unique passwords and enabling two-factor authentication can enhance security." },
+{ "I don't know how to create a strong password", "Creating a strong password involves using a mix of characters and avoiding easily guessable information." },
 
 
 
 //social engineering follow up questions
-{ "What are common social engineering techniques?","Common techniques include phishing, pretexting, baiting, and impersonation to trick people into revealing information." },
-{ "How can I avoid falling victim to social engineering?","Be cautious with unsolicited requests, verify identities, and never share sensitive information without confirmation." },
-{ "Can social engineering happen over the phone?","Yes, attackers often use phone calls to impersonate trusted individuals and extract confidential information." },
+{ "What are common social engineering techniques","Common techniques include phishing, pretexting, baiting, and impersonation to trick people into revealing information." },
+{ "How can I avoid falling victim to social engineering","Be cautious with unsolicited requests, verify identities, and never share sensitive information without confirmation." },
+{ "Can social engineering happen over the phone","Yes, attackers often use phone calls to impersonate trusted individuals and extract confidential information." },
 
  //social engineering statements with emotion
- { "I feel vulnerable to social engineering attacks.", "It's normal to feel vulnerable. Awareness and caution can help you avoid falling victim." },
- { "I'm worried about sharing personal information.", "Your concern is valid. Always verify the identity of the person requesting information." },
- { "I don't know how to spot social engineering attempts.", "Look for unusual requests, urgency, and verify the source before sharing any information." }
+ { "I feel vulnerable to social engineering attacks", "It's normal to feel vulnerable. Awareness and caution can help you avoid falling victim." },
+ { "I'm worried about sharing personal information", "Your concern is valid. Always verify the identity of the person requesting information." },
+ { "I don't know how to spot social engineering attempts", "Look for unusual requests, urgency, and verify the source before sharing any information." }
 
 
   };
